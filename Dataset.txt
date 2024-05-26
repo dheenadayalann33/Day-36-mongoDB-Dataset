@@ -1,0 +1,84 @@
+users:-
+db.users.insertMany([
+    {name:'test1',phone:9876543210,email:'test1@gmail.com',user_id:1,mentor_id:3},
+    {name:'test2',phone:9876543210,email:'test2@gmail.com',user_id:2,mentor_id:3},
+    {name:'test3',phone:9876543210,email:'test3@gmail.com',user_id:3,mentor_id:3},
+    {name:'test4',phone:9876543210,email:'test4@gmail.com',user_id:4,mentor_id:3},
+    {name:'test5',phone:9876543210,email:'test5@gmail.com',user_id:5,mentor_id:3},
+    {name:'test6',phone:9876543210,email:'test6@gmail.com',user_id:1,mentor_id:3},
+    {name:'test7',phone:9876543210,email:'test7@gmail.com',user_id:2,mentor_id:3},
+    {name:'test8',phone:9876543210,email:'test8@gmail.com',user_id:3,mentor_id:3},
+    {name:'test9',phone:9876543210,email:'test9@gmail.com',user_id:4,mentor_id:3},
+    {name:'test10',phone:9876543210,email:'test10@gmail.com',user_id:5,mentor_id:3},
+    {name:'test11',phone:9876543210,email:'test11@gmail.com',user_id:1,mentor_id:3},
+    {name:'test12',phone:9876543210,email:'test12@gmail.com',user_id:2,mentor_id:3},
+    {name:'test13',phone:9876543210,email:'test13@gmail.com',user_id:3,mentor_id:3},
+    {name:'test14',phone:9876543210,email:'test14@gmail.com',user_id:4,mentor_id:3},
+    {name:'test15',phone:9876543210,email:'test15@gmail.com',user_id:5,mentor_id:3},
+    {name:'test16',phone:9876543210,email:'test16@gmail.com',user_id:1,mentor_id:3},
+    {name:'test17',phone:9876543210,email:'test17@gmail.com',user_id:2,mentor_id:3},
+    {name:'test18',phone:9876543210,email:'test18@gmail.com',user_id:3,mentor_id:5},
+    {name:'test19',phone:9876543210,email:'test19@gmail.com',user_id:4,mentor_id:5},
+    {name:'test20',phone:9876543210,email:'test20@gmail.com',user_id:5,mentor_id:5},
+    {name:'test21',phone:9876543210,email:'test21@gmail.com',user_id:1,mentor_id:5},
+    {name:'test22',phone:9876543210,email:'test22@gmail.com',user_id:2,mentor_id:5},
+    {name:'test23',phone:9876543210,email:'test23@gmail.com',user_id:3,mentor_id:5},
+    {name:'test24',phone:9876543210,email:'test24@gmail.com',user_id:4,mentor_id:5},
+    {name:'test25',phone:9876543210,email:'test25@gmail.com',user_id:5,mentor_id:5},
+    {name:'test26',phone:9876543210,email:'test26@gmail.com',user_id:1,mentor_id:5},
+    {name:'test27',phone:9876543210,email:'test27@gmail.com',user_id:2,mentor_id:5},
+    {name:'test28',phone:9876543210,email:'test28@gmail.com',user_id:3,mentor_id:5},
+    {name:'test29',phone:9876543210,email:'test29@gmail.com',user_id:4,mentor_id:5},
+    {name:'test30',phone:9876543210,email:'test30@gmail.com',user_id:5,mentor_id:5},
+    {name:'test31',phone:9876543210,email:'test31@gmail.com',user_id:5,mentor_id:5},
+    {name:'test32',phone:9876543210,email:'test32@gmail.com',user_id:5,mentor_id:5},
+    {name:'test33',phone:9876543210,email:'test33@gmail.com',user_id:5,mentor_id:5},
+])
+codekata:-
+db.codekata.insertMany([
+    {user_id:1,sum_completed:43},
+    {user_id:2,sum_completed:47},
+    {user_id:3,sum_completed:56},
+    {user_id:4,sum_completed:39},
+    {user_id:5,sum_completed:45},
+])
+attendance:-
+db.attendance.insertMany([
+    {topic_id:1,attendance:{1:true,2:false,3:true,4:true,5:true}},
+    {topic_id:2,attendance:{1:true,2:true,3:false,4:true,5:true}},
+    {topic_id:3,attendance:{1:true,2:true,3:true,4:false,5:true}},
+    {topic_id:4,attendance:{1:true,2:true,3:true,4:true,5:false}},
+    {topic_id:5,attendance:{1:false,2:true,3:true,4:true,5:true}},
+])
+topics:-
+db.topics.insertMany([
+    {topic_id:1,topic:'Module-1',date:new Date(01-oct-2020)},
+    {topic_id:2,topic:'Module-2',date:new Date(19-oct-2020)},
+    {topic_id:3,topic:'Module-3',date:new Date(28-oct-2020)},
+    {topic_id:4,topic:'Module-4',date:new Date(12-nov-2020)},
+    {topic_id:5,topic:'Module-5',date:new Date(26-nov-2020)},
+])
+tasks:-
+db.tasks.insertMany([
+    {task_id:1,topic_id:1,task_name:'Module-1',due_date: new Date("02-oct-2020"),submitted:[1,3,4,5]},
+    {task_id:2,topic_id:2,task_name:'Module-2',due_date: new Date("20-oct-2020"),submitted:[1,2,4,5]},
+    {task_id:3,topic_id:3,task_name:'Module-3',due_date: new Date("29-oct-2020"),submitted:[1,3,2,5]},
+    {task_id:4,topic_id:4,task_name:'Module-4',due_date: new Date("13-nov-2020"),submitted:[1,3,4,2]},
+    {task_id:5,topic_id:5,task_name:'Module-5',due_date: new Date("27-nov-2020"),submitted:[2,3,4,5]},
+])
+company_drives:-
+db.company_drives.insertMany([
+    {user_id:1,drive_date:new Date("02-oct-2020"),company_name:'Meta'},
+    {user_id:2,drive_date:new Date("20-oct-2020"),company_name:'Google'},
+    {user_id:3,drive_date:new Date("29-oct-2020"),company_name:'Amazon'},
+    {user_id:4,drive_date:new Date("13-nov-2020"),company_name:'Netflix'},
+    {user_id:5,drive_date:new Date("27-nov-2020"),company_name:'Apple'},
+])
+mentors:-
+db.mentors.insertMany([
+    {mentor_id:1,mentor_name:'Mentor1',mentor_email:'mentor1@gmail.com'},
+    {mentor_id:2,mentor_name:'Mentor2',mentor_email:'mentor2@gmail.com'},
+    {mentor_id:3,mentor_name:'Mentor3',mentor_email:'mentor3@gmail.com'},
+    {mentor_id:4,mentor_name:'Mentor4',mentor_email:'mentor4@gmail.com'},
+    {mentor_id:5,mentor_name:'Mentor5',mentor_email:'mentor5@gmail.com'},
+])
